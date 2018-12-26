@@ -1,8 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
-import misc
 
-tgtoken = misc.tgtoken #str(os.environ.get('tgtoken'))
+tgtoken = str(os.environ.get('tgtoken'))
 updater = Updater(token=tgtoken) # Токен API к Telegram
 dispatcher = updater.dispatcher
 
